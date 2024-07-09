@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+gunicorn
+sqlalchemy 
+sqlalchemy.orm
+pymysql
+requests 
+python-dotenv
+pytz
