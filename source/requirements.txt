@@ -8,3 +8,4 @@ pymysql
 requests 
 python-dotenv
 pytz
+google-cloud-secret-manager
