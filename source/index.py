@@ -1,8 +1,13 @@
 from fastapi import FastAPI
-from routes.index import testApi, createTxnApi, getTxnApi
+from routes.index import testApi, createTxnApi, getTxnApi, deleteTxnApi, deleteTxnsApi, \
+    deleteAllApi, updateTxnApi
 
 app = FastAPI ()
 
 app.include_router(testApi)
 app.include_router(createTxnApi)
 app.include_router(getTxnApi)
+app.include_router(deleteTxnApi)
+app.include_router(deleteTxnsApi)
+app.include_router(deleteAllApi)
+app.include_router(updateTxnApi)
