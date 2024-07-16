@@ -5,3 +5,4 @@ from routes.delete_txn import deleteTxnApi
 from routes.delete_txns import deleteTxnsApi
 from routes.delete_all import deleteAllApi
 from routes.update_txn import updateTxnApi
+from routes.get_all import getAllApi
