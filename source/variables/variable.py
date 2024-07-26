@@ -27,15 +27,15 @@ def access_secret_version(
 
 if environment == 'DEV' :
     MYSQL_HOST=     os.environ.get('DEV_MYSQL_HOST')
-    MYSQL_USER=     access_secret_version(os.environ.get('DEV_GCP_PROJECT_ID'),os.environ.get('DEV_SECRET_ID_MYSQL_USER'),os.environ.get('DEV_SECRET_VERSION_MYSQL_USER'))
-    MYSQL_PASSWORD= access_secret_version(os.environ.get('DEV_GCP_PROJECT_ID'),os.environ.get('DEV_SECRET_ID_MYSQL_PASSWORD'),os.environ.get('DEV_SECRET_VERSION_MYSQL_PASSWORD'))
+    MYSQL_USER=     access_secret_version(os.environ.get('DEV_GCP_PROJECT_ID'),os.environ.get('DEV_SECRET_ID_MYSQL_USER'),os.environ.get('DEV_SECRET_VERSION'))
+    MYSQL_PASSWORD= access_secret_version(os.environ.get('DEV_GCP_PROJECT_ID'),os.environ.get('DEV_SECRET_ID_MYSQL_PASSWORD'),os.environ.get('DEV_SECRET_VERSION'))
     MYSQL_PORT=     os.environ.get('DEV_MYSQL_PORT')
     MYSQL_DATABASE= os.environ.get('DEV_MYSQL_DATABASE')
 
 
 if environment == 'PROD' :
     MYSQL_HOST =     os.environ.get('PROD_MYSQL_HOST')
-    MYSQL_USER=     access_secret_version(os.environ.get('PROD_GCP_PROJECT_ID'),os.environ.get('PROD_SECRET_ID_MYSQL_USER'),os.environ.get('PROD_SECRET_VERSION_MYSQL_USER'))
-    MYSQL_PASSWORD= access_secret_version(os.environ.get('PROD_GCP_PROJECT_ID'),os.environ.get('PROD_SECRET_ID_MYSQL_PASSWORD'),os.environ.get('PROD_SECRET_VERSION_MYSQL_PASSWORD'))
+    MYSQL_USER=     access_secret_version(os.environ.get('PROD_GCP_PROJECT_ID'),os.environ.get('PROD_SECRET_ID_MYSQL_USER'),os.environ.get('PROD_SECRET_VERSION'))
+    MYSQL_PASSWORD= access_secret_version(os.environ.get('PROD_GCP_PROJECT_ID'),os.environ.get('PROD_SECRET_ID_MYSQL_PASSWORD'),os.environ.get('PROD_SECRET_VERSION'))
     MYSQL_PORT =     os.environ.get('PROD_MYSQL_PORT')
     MYSQL_DATABASE = os.environ.get('PROD_MYSQL_DATABASE')
